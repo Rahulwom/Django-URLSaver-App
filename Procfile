@@ -1,3 +1,3 @@
-release: python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser --no-input
+release: python manage.py makemigrations && python manage.py migrate
 web: gunicorn core.wsgi
 
